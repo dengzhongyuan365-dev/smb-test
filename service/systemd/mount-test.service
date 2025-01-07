@@ -1,0 +1,10 @@
+[Unit]
+Description=Mount Test Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mount-service
+
+[Install]
+WantedBy=multi-user.target
